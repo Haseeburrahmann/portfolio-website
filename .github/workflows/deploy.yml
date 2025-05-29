@@ -33,7 +33,7 @@ jobs:
       run: npm ci
 
     - name: Build Angular application
-      run: ng build --configuration production
+      run: npm run build
 
     - name: Setup Pages
       uses: actions/configure-pages@v4
@@ -41,7 +41,7 @@ jobs:
     - name: Upload build artifact
       uses: actions/upload-pages-artifact@v3
       with:
-        path: './dist/portfolio-website-app'
+        path: './dist/portfolio-website-app/browser'
 
   deploy:
     environment:
