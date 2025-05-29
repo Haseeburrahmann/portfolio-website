@@ -1,0 +1,158 @@
+/* ===== LIGHT THEME STYLES ===== */
+
+[data-theme="light"], :root {
+    /* ===== PRIMARY COLORS ===== */
+    --primary-color: #1976d2;
+    --primary-hover: #1565c0;
+    --primary-light: #42a5f5;
+    --primary-dark: #0d47a1;
+    
+    /* ===== ACCENT COLORS ===== */
+    --accent-color: #ff9800;
+    --accent-hover: #f57c00;
+    --accent-light: #ffb74d;
+    --accent-dark: #e65100;
+    
+    /* ===== SUCCESS/ERROR/WARNING ===== */
+    --success-color: #4caf50;
+    --error-color: #f44336;
+    --warning-color: #ff9800;
+    --info-color: #2196f3;
+    
+    /* ===== TEXT COLORS ===== */
+    --text-primary: #212121;
+    --text-secondary: #616161;
+    --text-muted: #9e9e9e;
+    --text-inverse: #ffffff;
+    --text-link: var(--primary-color);
+    --text-link-hover: var(--primary-hover);
+    
+    /* ===== BACKGROUND COLORS ===== */
+    --bg-primary: #ffffff;
+    --bg-secondary: #fafafa;
+    --bg-tertiary: #f5f5f5;
+    --bg-card: #ffffff;
+    --bg-overlay: rgba(255, 255, 255, 0.9);
+    --bg-modal: rgba(0, 0, 0, 0.5);
+    
+    /* ===== BORDER COLORS ===== */
+    --border-color: #e0e0e0;
+    --border-light: #f0f0f0;
+    --border-dark: #bdbdbd;
+    --border-focus: var(--primary-color);
+    
+    /* ===== SHADOW COLORS ===== */
+    --shadow-color: rgba(0, 0, 0, 0.1);
+    --shadow-color-medium: rgba(0, 0, 0, 0.15);
+    --shadow-color-dark: rgba(0, 0, 0, 0.2);
+    
+    /* ===== SPECIFIC COMPONENT COLORS ===== */
+    --navbar-bg: rgba(255, 255, 255, 0.95);
+    --navbar-border: rgba(0, 0, 0, 0.1);
+    --hero-bg: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    --section-bg-alt: #f8f9fa;
+    
+    /* ===== SKILL BADGE COLORS ===== */
+    --skill-dotnet: #512bd4;
+    --skill-angular: #dd0031;
+    --skill-azure: #0078d4;
+    --skill-sql: #cc2927;
+    --skill-csharp: #239120;
+    --skill-javascript: #f7df1e;
+    --skill-typescript: #3178c6;
+    --skill-html: #e34f26;
+    --skill-css: #1572b6;
+    --skill-bootstrap: #7952b3;
+    
+    /* ===== GRADIENTS ===== */
+    --gradient-primary: linear-gradient(135deg, var(--primary-color) 0%, var(--primary-light) 100%);
+    --gradient-accent: linear-gradient(135deg, var(--accent-color) 0%, var(--accent-light) 100%);
+    --gradient-hero: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    --gradient-card: linear-gradient(145deg, #ffffff 0%, #f8f9fa 100%);
+    --gradient-text: linear-gradient(45deg, var(--primary-color), var(--accent-color));
+    --gradient-border: linear-gradient(90deg, var(--primary-color), var(--accent-color));
+  }
+  
+  /* ===== LIGHT THEME SPECIFIC STYLES ===== */
+  .light-theme {
+    .hero-section {
+      background: var(--hero-bg);
+      color: var(--text-inverse);
+    }
+    
+    .section-alternate {
+      background: var(--section-bg-alt);
+    }
+    
+    .navbar {
+      background: var(--navbar-bg);
+      backdrop-filter: blur(10px);
+      border-bottom: 1px solid var(--navbar-border);
+    }
+    
+    .card {
+      background: var(--bg-card);
+      border: 1px solid var(--border-light);
+      box-shadow: var(--shadow-base);
+      
+      &:hover {
+        box-shadow: var(--shadow-lg);
+      }
+    }
+    
+    .skill-badge {
+      background: var(--bg-card);
+      border: 1px solid var(--border-light);
+      color: var(--text-primary);
+      
+      &.dotnet { background: rgba(81, 43, 212, 0.1); color: var(--skill-dotnet); }
+      &.angular { background: rgba(221, 0, 49, 0.1); color: var(--skill-angular); }
+      &.azure { background: rgba(0, 120, 212, 0.1); color: var(--skill-azure); }
+      &.sql { background: rgba(204, 41, 39, 0.1); color: var(--skill-sql); }
+      &.csharp { background: rgba(35, 145, 32, 0.1); color: var(--skill-csharp); }
+      &.javascript { background: rgba(247, 223, 30, 0.1); color: #d4af00; }
+      &.typescript { background: rgba(49, 120, 198, 0.1); color: var(--skill-typescript); }
+      &.html { background: rgba(227, 79, 38, 0.1); color: var(--skill-html); }
+      &.css { background: rgba(21, 114, 182, 0.1); color: var(--skill-css); }
+      &.bootstrap { background: rgba(121, 82, 179, 0.1); color: var(--skill-bootstrap); }
+    }
+    
+    .project-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border-light);
+      
+      .project-overlay {
+        background: rgba(255, 255, 255, 0.95);
+        color: var(--text-primary);
+      }
+    }
+    
+    .timeline-item {
+      .timeline-content {
+        background: var(--bg-card);
+        border: 1px solid var(--border-light);
+      }
+      
+      .timeline-marker {
+        background: var(--primary-color);
+        border: 3px solid var(--bg-primary);
+      }
+    }
+    
+    .contact-form {
+      .form-control {
+        background: var(--bg-primary);
+        border: 2px solid var(--border-color);
+        color: var(--text-primary);
+        
+        &:focus {
+          border-color: var(--primary-color);
+          box-shadow: 0 0 0 3px rgba(25, 118, 210, 0.1);
+        }
+      }
+      
+      .form-label {
+        color: var(--text-secondary);
+      }
+    }
+  }
