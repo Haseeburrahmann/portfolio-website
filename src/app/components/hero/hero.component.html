@@ -1,1 +1,158 @@
-<p>hero works!</p>
+<section class="hero-section" id="home">
+    <div class="hero-background">
+      <div class="hero-overlay"></div>
+      <div class="hero-particles"></div>
+    </div>
+    
+    <div class="container-fluid">
+      <div class="row min-vh-100 align-items-center">
+        <div class="col-lg-6 order-2 order-lg-1" data-aos="fade-right" data-aos-duration="1000">
+          <div class="hero-content">
+            <!-- Greeting Animation -->
+            <div class="hero-greeting">
+              <span class="greeting-text">Hello, I'm</span>
+            </div>
+            
+            <!-- Main Name with Typing Effect -->
+            <h1 class="hero-name">
+              <span class="name-highlight">Haseeb Ur Rahman</span>
+              <br>
+              <span class="surname">Mohammad</span>
+            </h1>
+            
+            <!-- Professional Title -->
+            <div class="hero-title">
+              <h2 class="title-main">
+                <span class="typed-text" #typedElement></span>
+                <span class="cursor">|</span>
+              </h2>
+            </div>
+            
+            <!-- Professional Summary -->
+            <div class="hero-summary">
+              <p class="summary-text">
+                <strong>2+ years</strong> of experience building <span class="highlight">enterprise solutions</span> 
+                with <strong>.NET</strong>, <strong>Angular</strong>, and <strong>Azure Cloud Services</strong>. 
+                Currently developing scalable microservices at <span class="highlight">JET Health Solutions</span>.
+              </p>
+            </div>
+            
+            <!-- Key Stats -->
+            <div class="hero-stats" data-aos="fade-up" data-aos-delay="200">
+              <div class="stat-item">
+                <div class="stat-number">2+</div>
+                <div class="stat-label">Years Experience</div>
+              </div>
+              <div class="stat-item">
+                <div class="stat-number">15+</div>
+                <div class="stat-label">Technologies</div>
+              </div>
+              <div class="stat-item">
+                <div class="stat-number">5+</div>
+                <div class="stat-label">Projects</div>
+              </div>
+            </div>
+            
+            <!-- Call-to-Action Buttons -->
+            <div class="hero-actions" data-aos="fade-up" data-aos-delay="300">
+              <div class="btn-group-custom">
+                <button class="btn-primary-custom" (click)="scrollToSection('projects')">
+                  <span>View My Work</span>
+                  <i class="fas fa-arrow-right"></i>
+                </button>
+                
+                <button class="btn-secondary-custom" (click)="downloadResume()">
+                  <i class="fas fa-download"></i>
+                  <span>Download Resume</span>
+                </button>
+              </div>
+            </div>
+            
+            <!-- Social Links -->
+            <div class="hero-social" data-aos="fade-up" data-aos-delay="400">
+              <div class="social-links">
+                <a href="https://github.com/Haseeburrahmann" 
+                   target="_blank" 
+                   rel="noopener noreferrer"
+                   class="btn-social github"
+                   title="GitHub Profile">
+                  <i class="fab fa-github"></i>
+                </a>
+                
+                <a href="https://linkedin.com/in/haseeb-ur-rahman-mohammad-5274781b0" 
+                   target="_blank" 
+                   rel="noopener noreferrer"
+                   class="btn-social linkedin"
+                   title="LinkedIn Profile">
+                  <i class="fab fa-linkedin-in"></i>
+                </a>
+                
+                <a href="mailto:mohd.haseeb.4201@gmail.com" 
+                   class="btn-social email"
+                   title="Send Email">
+                  <i class="fas fa-envelope"></i>
+                </a>
+                
+                <a href="tel:+13054278756" 
+                   class="btn-social phone"
+                   title="Call Me">
+                  <i class="fas fa-phone"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Right Column - Profile Image & Tech Stack -->
+        <div class="col-lg-6 order-1 order-lg-2" data-aos="fade-left" data-aos-duration="1000">
+          <div class="hero-visual">
+            <!-- Profile Image Container -->
+            <div class="profile-container">
+              <div class="profile-image-wrapper">
+                <div class="profile-background"></div>
+                <img 
+                  src="https://via.placeholder.com/350x350/667eea/ffffff?text=HRM" 
+                  alt="Haseeb Ur Rahman Mohammad - Software Developer"
+                  class="profile-image"
+                  loading="eager">
+                
+                <!-- Floating Tech Icons -->
+                <div class="floating-tech tech-1" data-aos="zoom-in" data-aos-delay="500">
+                  <i class="fab fa-angular" title="Angular"></i>
+                </div>
+                <div class="floating-tech tech-2" data-aos="zoom-in" data-aos-delay="600">
+                  <i class="fab fa-microsoft" title=".NET"></i>
+                </div>
+                <div class="floating-tech tech-3" data-aos="zoom-in" data-aos-delay="700">
+                  <i class="fab fa-aws" title="Azure"></i>
+                </div>
+                <div class="floating-tech tech-4" data-aos="zoom-in" data-aos-delay="800">
+                  <i class="fas fa-database" title="SQL Server"></i>
+                </div>
+              </div>
+            </div>
+            
+            <!-- Status Badge -->
+            <div class="status-badge" data-aos="fade-in" data-aos-delay="900">
+              <div class="status-indicator"></div>
+              <span class="status-text">Available for opportunities</span>
+            </div>
+            
+            <!-- Location Info -->
+            <div class="location-info" data-aos="fade-in" data-aos-delay="1000">
+              <i class="fas fa-map-marker-alt"></i>
+              <span>Fort Lauderdale, Florida</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Scroll Down Indicator -->
+    <div class="scroll-indicator" data-aos="fade-up" data-aos-delay="1200">
+      <div class="scroll-text">Scroll Down</div>
+      <div class="scroll-arrow">
+        <i class="fas fa-chevron-down"></i>
+      </div>
+    </div>
+  </section>
